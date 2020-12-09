@@ -1,0 +1,14 @@
+https://www.ministeriodesalud.go.cr/index.php/centro-de-prensa/noticias/741-noticias-2020/1621-costa-rica-registra-su-quinto-fallecimiento-de-paciente-covid-19
+
+Costa Rica registra su quinto fallecimiento de paciente COVID-19
+
+19 de abril del 2020. Esta tarde se registró en el Hospital San Juan de Dios la quinta muerte de un paciente positivo por COVID-19. Se trata de un hombre de 69 años, costarricense, vecino de San José.
+
+El fallecido, además de la edad, padecía de hipertensión arterial, factor de riesgo ante el COVID-19.
+
+Su diagnóstico COVID-19 fue el 25 de marzo e ingresó a cuidados intensivos del San Juan de Dios desde el 28 de marzo.
+
+Este lamentablemente fallecimiento se suma a los ya registrados de cuatro hombres: dos de 87 años, uno de 45 años y uno de 84 años.
+
+
+$cr_canton_covid19.casos_confirmados-$cr_canton_covid19.casos_muertes-$cr_canton_covid19.casos_recuperados
