@@ -66,6 +66,23 @@ source("./code/IMoran_fun.R")
 
 
 #---------------------------------------------------------
+# Crea los directorios de las salidas
+dir.out.plot <- paste0("./graf/IMoran/",tt,"/",modelo,"/")
+
+#Revisa si existe el directorio de salida graficos
+if (!file.exists(dir.out.plot)){
+  dir.create(dir.out.plot) #Crea directorio si no existe
+} 
+
+#Revisa si existe el directorio de salida tablas
+dir.out.tab <- paste0("./data/minsa/tab/",tt,"/")
+
+#Revisa si existe el directorio de salida
+if (!file.exists(dir.out.tab)){
+  dir.create(dir.out.tab) #Crea directorio si no existe
+} 
+
+#---------------------------------------------------------
 # Adjacency Matrix (Queen)
 
 #Se evalua si la matriz de adyacencia existe
@@ -226,13 +243,13 @@ etiquetas
 colores <- c("#FF1D15","#56B4E9","#F1AB86","#0072B2","#636363")
 
 #Cambia la expression de acuerdo al modelo usado 
-expre.theme <- c(expression("Densidad de poblaci?n " * (hab/km^2)), expression("IDS 2017"),
+expre.theme <- c(expression("Densidad de población " * (hab/km^2)), expression("IDS 2017"),
                  expression("IPS 2019"), expression("NBH 2019"), 
-                 expression("Tasa de vacunaci?n 2019"),expression("Densidad vial 2020"))
+                 expression("Tasa de vacunación 2019"),expression("Densidad vial 2020"))
 
 p01 <- ggplot(ams, aes(x, y_lag, colour=patron)) +
         geom_point() + 
-        scale_colour_manual(name= "Patr?n", values=colores,
+        scale_colour_manual(name= "Patrón", values=colores,
                               labels = c("Alto - Alto","Alto - Bajo","Bajo - Alto","Bajo - Bajo", "No signif.")) +
         geom_smooth(method = 'lm', se = F, color="black", size=0.8) + 
         geom_hline(yintercept = 0, linetype = 'dashed') + 
